@@ -42,3 +42,17 @@ def matriza(L):
         for j in range(f + 1):
             summa += L[r1 + j][r2 + j]
         print(summa)
+
+
+
+
+
+def revers(L):
+     k = []
+     for i in range(len(L)):
+        if len(L) == 1:
+            k.append(L[-1])
+            return k
+        else:
+            k.append(L[-1])
+            del L[-1]
