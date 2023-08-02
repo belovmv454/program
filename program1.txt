@@ -1,1 +1,18 @@
-print(44)
+def max1(N):
+    k = []
+    maximum = N
+    while not(N in k):
+        k.append(N)
+        if N % 2 == 0:
+            N /= 2
+            if maximum < N:
+                maximum = N
+        else:
+            N = N * 3 + 1
+            if maximum < N:
+                maximum = N
+    return maximum
+assert(max1(3) == 16)
+assert(max1(11) == 52)
+assert(max1(1) == 4)
+assert(max1(12) == 16)
