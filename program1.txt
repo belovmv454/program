@@ -16,3 +16,29 @@ assert(max1(3) == 16)
 assert(max1(11) == 52)
 assert(max1(1) == 4)
 assert(max1(12) == 16)
+
+
+
+
+
+def matriza(L):
+    r1 = len(L[0]) - 1
+    r2 = 0
+    f = 0
+    for j in range(len(L[0]) - 1):
+        summa = 0
+        r1 -= 1
+        f += 1
+        for i in range(f + 1):
+            summa += L[r1 + i][r2 + i]
+        print(summa)
+    r1 = 0
+    r2 = len(L[0]) - 1
+    f = 0
+    summa = 0
+    for i in range(len(L[0]) - 2):
+        r2 -= 1
+        f += 1
+        for j in range(f + 1):
+            summa += L[r1 + j][r2 + j]
+        print(summa)
