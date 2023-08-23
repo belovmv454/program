@@ -14,3 +14,4 @@ def matriza(L):
             return L
     return L
 assert(reversed([[1, 2],[3, 4],[5, 6]])) == [[2, 1],[4, 3],[6, 5]]
+assert(reversed([[1, 2 ,7],[3, 4, 8],[5, 6, 9]])) == [[7, 2, 1],[8, 4, 3],[9, 6, 5]]
